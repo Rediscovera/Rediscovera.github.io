@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"  type="text/css" href="assets/css/typo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed() {
+                    var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                    document.getElementById('side').style.position = value;
+                }
+            </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 414px) {
+                   
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #1abc9c;   
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <!-- <div class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/resume.jpg">
+                </section>
+
+                <h1 class="name"><font size="5"><b>Ying Qian</b></font></h1>
+            </section>
+
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>Contact</h2>
+                <hr />
+                <ul>
+                   
+                    <li>
+                        <label> <i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></label>
+                        <a target="_blank"> <font size="2"><span style="text-align:right">(+86)18240439947</span> </font></a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-weixin"></i></label>
+                        <a href="assets/images/wechat.jpg" target="_blank"> <font size="2"><span style="text-align:right">Rediscovera</span> </font></a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-envelope-o"></i></label>
+                        <a href="mailto:1824043994@163.com" target="_blank"> <font size="2"><span style="text-align:right">18240439947@163.com</span> </font></a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-envelope-o"></i></label>
+                        <a href="mailto:qy18240439947@gmail.com" target="_blank">   <font size="2"><span style="text-align:right">qy18240439947@gmail.com</span> </font></a>
+                    </li>
+                </ul>
+            </section>
+
+             <!-- 英语 -->
+             <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>Language</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <p>CET-6     <font size="2"><span style="text-align:right">530</span> </font></p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                    <h2>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                    <hr />
+                    <ul>
+                        <li>
+                            <h3>
+                                <p><a href="http://english.neu.edu.cn/"><b>Northeastern University</b> </a>       </p>
+                                <p><font size="2.5">2014.10-2015.08</font></p>
+                                <p><font size="2.5">Major: IMIS</font></p>
+                                <p><font size="2.5">GPA: 4.08/5.0 (Top 2%)</font>
+                            </h3>
+                            
+                            
+                                
+                            </p>
+                           
+                        </li>
+                        <li>
+                            <h3>
+                                <p><a href="http://english.neu.edu.cn/" ><b>Northeastern University(B.E)</b></a>    </p>
+                                <p> <font size="2.5">2015.09-2019.06</font></p>
+                                <p> <font size="2.5">Major: Automation</font></p>
+                                <p> <font size="2.5">Mentor: Ping Yuan & Shiguang Wen</font></p>
+                                <p><font size="2.5"> GPA: 4.15/5.0 (Top 3%)</font>
+                            </h3>
+                            
+                               
+                            </p>
+                        
+                        </li>
+                        <li>
+                            <h3>
+                                <p><a href="http://www.sysu.edu.cn/en/index.htm"><b>Sun Yat-sen University(M.E)</b> </a> </p>
+                                <p><font size="2.5">2019.09-2021.06</font>
+                                    <p> <font size="2.5">Mentor: Kai Wang</font></p>
+                                <p><font size="2.5">Major: ECE</font></p>
+                            </h3>
+
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- 个人荣誉 -->
+                <section class="edu info-unit">
+                    <h2>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>Honors & Awards</h2>
+                    <hr />
+    
+    
+                    1. Outstanding Student of NEU (2015)<br />
+                    2. NEU Second-class Scholarship (2015) <br />
+                    3. Outstanding Student of NEU (2016)<br />
+                    4. NEU First-class Scholarship (2016) <br />
+                    5. Inspur Scholarship (2016) <br />
+                    6. Work-study Advanced Individual of NEU<br />
+                    7. NEU Second-class Scholarship (2019) <br />
+                    8. Outstanding Graduate of SISE, NEU <br />
+                    9. SYSU Second-class Scholarship (2019)<br />
+                </section>
+            <!-- 个人技能 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>Skills</h2>
+                <hr/>
+                <ul>
+                   
+                    <li>
+                        <label>Python</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>LabVIEW</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>MATLAB</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+
+                    <li>
+                        <label>AD</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Java</label>
+                        <progress value="30" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>C</label>
+                        <progress value="30" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="main">
+
+
+           
+
+           
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Project Experience</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[Project 1]Large Area Thin Film Devices and Integrated Systems (National Key Project)</span>
+                            <time>2020.05-now</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                Project Description<br />
+                                
+                                <p align="justify">
+                                    This project is based on the demand of artificial intelligence for edge computing system.
+                                    It breaks through the limitation of "traditional large-area thin-film electronic devices are difficult to realize cognitive computing", 
+                                    and , and achieves original innovation and breakthrough in the key areas of thin-film device performance regulation 
+                                    and integration, circuit and algorithm architecture, design automation, system and application through the new computing technology of "sense and compute in one", 
+                                    and develops a large-area, highly reliable, multi-functional integrated cognitive edge computing system.
+                                </p>
+                            </li>
+                            <li>
+                                [Contributions]<br />
+                                <p>
+                                    &emsp;&emsp;1. Design the amplification and acquisition circuit of array sensor and draw the PCB board using Altium Designer<br />
+                                    &emsp;&emsp;2. Implement data communication between FPGA and host computer based on LwIP <br />
+                                    &emsp;&emsp;3. Write the upper computer based on LabVIEW to display the data in real time<br />
+                                    &emsp;&emsp;4. Establish a ResNet-based blood pressure prediction model, and use the MIMIC database for training and validation. Predict human blood pressure using the pulse wave signal collected by the array sensor successfully.
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[Project 2] 
+                                Research on Multi-source Heterogeneous Information Fusion and Early Warning Technology (Provincial Project) </a></span>
+                           
+                            <time>2019.03-2019.06</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>Project Description<br />
+                                <p align="justify">
+                                    Based on the heterogeneous information such as surface deformation, shallow stratigraphic deformation, gas leakage and deep stratigraphic geological conditions collected during the exploration and 
+                                    exploitation of subsea combustible ice, this project establishes a wireless sensor network based on the surface and underwater sensor networks, 
+                                    and develops a new system for efficient management and fusion of multi-source heterogeneous data. 
+                                    The system can not only integrate and fuse massive multi-source heterogeneous subsea spatial exploration and environmental monitoring data,
+                                     but also make full use of the received heterogeneous information resources to conduct intelligent analysis, cooperative monitoring of multi-source network information and discover monitoring events.
+
+                                </p>
+                            </li>
+                       
+                            <li>
+                                [Contributions]<br />
+                                <p>
+                                    &emsp;&emsp;1. Propose a RBF neural network based on AP-BA for red tide prediction
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+             <!-- 实习经历 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Internship</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[Company]：Beijing Benz Automotive Co., Ltd.</span>
+                            <time> 2019.07-2019.08</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                [Job Title]：Intern of Technical Training Department
+                            </li>
+                            <li>
+                                [Contributions]<br />
+                                <p>
+                                    &emsp;&emsp;1. Coordinate departmental training and new project implementation <br />
+                                    &emsp;&emsp;2. Collect, translate and sort training forms<br />
+                                    &emsp;&emsp;3. Set up the trainer management website based on Python3 and Django2<br />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+<!-- 竞赛经历 -->
+<section class="project info-unit">
+    <h2>
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Competition Experience</h2>
+    <hr />
+    <ul>
+        <li>
+            <h3>
+                <span>The 10th National University Student Social Practice and Science Contest on Energy Saving & Emission Reduction (National Second Priz) </span>
+                <time>2016.11 - 2017.08</time>
+            </h3> 
+            <ul class="info-content">
+                <li>
+                    Project Description<br />
+                    <p align="justify">
+
+                        The project is "Carbonless Infinite/Wireless Power Kit".
+                        This project developed a set of carbonless infinite/wireless electric energy kit. 
+                        The purpose of this kit is to solve the problem of short duration of outdoor rechargeable battery and heavy charging equipment, 
+                        so as to realize the function of charging anytime and anywhere.
+                        The main body of the Carbonless Infinite/Wireless Electric Energy Kit consists of a photovoltaic power generation module, 
+                        a power storage module and a wireless charging module. The photovoltaic charging module converts light energy into electric energy
+                        and the storage module stores the excess power. 
+                        The wireless charging module and the electric energy receiving end complete the transmission of electric energy in the storage module through electromagnetic induction. 
+                        The exterior of the kit is equipped with Velcro which allows the charging device to be attached in all locations.
+                    </p>
+                   
+                </li>
+                <li>
+                    [Contributions]<br />
+                    <p>
+                        &emsp;&emsp;1. Be responsible for circuit design, welding and debugging.<br />
+                        &emsp;&emsp;2. Be responsible for writing the defense materials.<br />
+                       
+                    </p>
+
+                </li>
+            </ul>
+        </li>
+        
+
+    </ul>
+</section>
+
+<!-- 论文 -->
+<section class="project info-unit">
+    <h2>
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Thesis</h2>
+    <hr />
+    <ul>
+        <li>
+            <h4>
+                <a href="assets/pdf/SID2021.pdf" target="_blank"><span align="justify" style="color:#1abc9c"> A Wearable Self-Driven Piezoelectric Sensor Enabling Real-Time Blood Pressure Estimation<br />
+                   </span></a>
+                     <span> <b>Ying Qian</b>, Huimin Li, Anqi Li, Xinghui Liu, Guoxian Wu, Weikang Yu, Kai Wang<br />
+                       <i>Display Week of Society for Information Display(<b>SID</b>), 2021</i> </span> 
+            </h4> 
+        </li>
+       
+
+    </ul>
+
+
+</section>
+
+
+<!-- 学生组织及社会实践经历 -->
+<section class="project info-unit">
+    <h2>
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Student Organization and Social Practice Experience</h2>
+    <hr />
+    <ul>
+       
+
+        <li>
+            <h3>
+                <span>NEU Student Union (Member of CED)</span>
+                <time>2015.03 - 2015.08</time>
+            </h3> 
+        </li>
+
+        <li>
+            <h3>
+                <span>NEU Smart Car Lab (Lab Assistant) </span>
+                <time>2015.10 - 2019.06</time>
+            </h3> 
+        </li>
+
+        <li>
+            <h3>
+                <span>NEU School of Innovation and Entrepreneurship (Assistant)</span>
+                <time>2016.03 - 2017.01</time>
+            </h3> 
+        </li>
+        <li>
+            <h3>
+                <span>SBA Social Practice Group in Wuhu (University-level Key Team)</span>
+                <time>2015.02 - 2015.03</time>
+            </h3> 
+        </li>
+
+        <li>
+            <h3>
+                <span>SISE Social Practice Group in Kuandian (University-level Key and Excellent Team)</span>
+                <time>2016.07</time>
+            </h3> 
+
+        </li>
+    </ul>
+</section>
+
+
+
+<!-- 自我评价 -->
+<section class="project info-unit">
+    <h2>
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Self-assessment</h2>
+    <hr />
+
+    <ul>
+        <li>
+            <h3>
+                <span>I have excellent academic performance, ranked among the top 3% of my major in undergraduate studies, and have good logical thinking and systematic analysis ability.</span>
+
+            </h3> 
+        </li>
+
+        <li>
+            <h3>
+                <span>    I have rich experience in innovation, entrepreneurship and social practice. I am good at learning skills through practice and have strong learning ability. </span>
+            </h3> 
+        </li>
+
+        <li>
+            <h3>
+                <span>I have a rich extracurricular life and is active in several university-level student organizations. I am serious and responsible in work, and have good executive ability.</span>
+            </h3> 
+        </li>
+
+    </ul>
+
+    
+
+
+</section>
+
+
+
+        </section>
+
+
+        
+
+
+
+    </section>
+    </article>
+
+
+    <footer class="footer">
+        <p> <b>Thank you for taking the time to read my resume and I look forward to the opportunity to work with you.</b> </p>
+    </footer>
+
+
+
+    <script src="./assets/js/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
